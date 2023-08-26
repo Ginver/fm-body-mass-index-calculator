@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+:root {
+  /*    typography*/
+
+  --headign-XL: font-family: 'Inter', sans-serif; font-size: 64px; line-height: 110%;
+  --heading-L: font-family: 'Inter', sans-serif; font-size: 48px; line-height: 110%;
+  --heading-M: font-family: 'Inter', sans-serif; font-size: 24px; line-height: 110%;
+  --heading-S: font-family: 'Inter', sans-serif; font-size: 20px; line-height: 100%;
+
+  /* colors */
+
+  --blue: hsl(227, 92%, 58%);
+  --gunmetal: hsl(215, 31%, 21%);
+  --dark-electric-blue: hsl(215, 17%, 45%);
+  --light-grey: hsl(200, 24%, 88%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(240, 67%, 8%);
+  background-image: url("../public/assets/background-stars.svg");
+  cursor: pointer;
+} */
+
+@media only screen and (min-width: 375px) {
+  .heading-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 640px;
+    background-color: var(--light-grey);
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+  }
+
+  .heading__svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .h1 {
+    font-family: var(--headign-XL);
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: -5px;
+    text-align: center;
+    color: var(--gunmetal);
+  }
+
+  .p {
+    font-family: var(--headign-S);
+    font-size: 16px;
+    color: var(--electric-blue);
+  }
+
+  .img {
+    width: 375px;
+    height: 354px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1440px) {
+}
