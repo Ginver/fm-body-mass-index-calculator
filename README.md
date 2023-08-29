@@ -26,4 +26,5 @@ The individual's healthy weight range based on the lower and upper BMI categoris
 
 ## My learningpoints while building the project
 
-- for the first time I had to css a background gradient 
+- for the first time I had to css a background gradient
+- I had to figure out how the filter property works so I can use drop-shadow effect 
