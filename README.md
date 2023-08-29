@@ -24,7 +24,7 @@ within the results component.
 
 The individual's healthy weight range based on the lower and upper BMI categorisations and the person's height.
 
-## My learningpoints while building the project
+#### My learningpoints while building the project
 
 - for the first time I had to css a background gradient
 - I had to figure out how the filter property works so I can use drop-shadow effect 
