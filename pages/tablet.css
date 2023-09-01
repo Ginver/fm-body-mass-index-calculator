@@ -1,0 +1,115 @@
+@media only screen and (min-width: 768px) {
+  .heading__main {
+    padding: 41px;
+  }
+
+  .heading__svg {
+    margin-bottom: 40px;
+  }
+
+  .calculator {
+    align-items: flex-start;
+    width: 686px;
+    height: 467px;
+    padding: 32px;
+    top: -245px;
+  }
+
+  .calculator__title {
+    margin-bottom: 32px;
+  }
+
+  .input--measurement--imperial {
+    display: none;
+    flex-direction: row;
+  }
+
+  .imperial-input-unit {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .input--imperial {
+    width: 299px;
+    height: 69px;
+    margin: 0 24px 24px 0;
+  }
+
+  .input--measurement--metric {
+    display: unset;
+    display: flex;
+  }
+
+  .metric-input-unit {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .input--metric {
+    width: 299px;
+    height: 69px;
+    margin: 0 24px 24px 0;
+  }
+
+  /* blabla */
+
+  .calc__results {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 622px;
+    padding: 32px;
+    border-radius: 16px 999px 999px 16px;
+  }
+
+  .heading__sub1 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .sub1--img {
+    width: 435px;
+    height: 411px;
+    margin-right: 75px;
+    margin-left: -75px;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+
+  .sub1--BMIresult {
+    justify-content: center;
+  }
+
+  .section__BMI-influencers {
+    margin-bottom: 96px;
+  }
+
+  .influencers {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .influencers--svg {
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
+
+  .section__BMI-limitations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .limitations {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 32px;
+    /* margin: 16px 0 16px 0; */
+    width: 335.5px;
+    height: 256px;
+  }
+}
