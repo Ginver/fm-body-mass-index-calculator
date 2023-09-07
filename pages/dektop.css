@@ -1,9 +1,13 @@
 @media only screen and (min-width: 1440px) {
+  .heading__unit {
+    flex-direction: row;
+    margin: 0 140px 0 24px;
+  }
+
   .heading__main {
     align-items: flex-start;
     height: 737px;
     padding: 75px 298px 200px 116px;
-    margin: 0 140px 0 24px;
   }
 
   .heading__svg {
@@ -21,6 +25,76 @@
     text-align: left;
   }
 
+  .calculator {
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 564px;
+    top: 0;
+    padding: 32px;
+  }
+
+  .calculator__checkbox {
+    justify-content: flex-start;
+    margin-bottom: 32px;
+  }
+
+  .checkbox--label {
+    padding: 3.5px 139px 3.5px 18px;
+  }
+
+  .input--metric--weight,
+  .input--metric--height,
+  .input--imperial--height,
+  .input--imperial--weight {
+    width: 238px;
+    height: 69px;
+  }
+
+  .input--metric--weight {
+    margin-right: 24px;
+  }
+
+  .calculator__results {
+    width: 500px;
+  }
+
+  .heading__sub1 {
+    margin: 64px 140px 96px 140px;
+  }
+
+  .sub1--img {
+    margin-left: 0;
+    margin-right: 132px;
+    width: 564px;
+    height: 533px;
+  }
+
+  .sub1--BMIresult {
+    padding: 0;
+  }
+
+  .sub1--title {
+    padding: 0;
+    margin-bottom: 35px;
+  }
+
+  .section__BMI-influencers {
+    flex-direction: row;
+    margin: 0 24px 120px 24px;
+    padding: 72px 117px 96px 116px;
+    border-radius: 35px;
+  }
+
+  .influencers {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .influencers--svg {
+    margin-bottom: 75px;
+    margin-right: 0;
+  }
+
   .heading__sub2 {
     display: flex;
     flex-direction: row;
@@ -30,16 +104,16 @@
   .sub2__BMI-limitations {
     display: flex;
     align-items: flex-start;
-    /* margin: 0 215px 56px 24px; */
-    /* width: 564px; */
   }
 
   .section__BMI-limitations {
     display: flex;
     flex-direction: column;
-    /* margin: 0 140px 120px 140px; */
     margin: 0;
-    /* width: 961px; */
+  }
+
+  .sub2--BMI-limitations {
+    margin-right: 132px;
   }
 
   .sub2--title,
@@ -47,7 +121,11 @@
     text-align: left;
   }
 
-  .limitations {
+  .limitations-gender,
+  .limitations-age,
+  .limitations-muscle,
+  .limitations-pregnancy,
+  .limitations-race {
     height: fit-content;
   }
 }

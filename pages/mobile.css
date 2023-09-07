@@ -1,0 +1,391 @@
+@media only screen and (min-width: 375px) {
+  .heading__unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heading__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 640px;
+    background-color: var(--light-grey);
+    background-image: linear-gradient(
+      -45deg,
+      rgba(214, 230, 254, 1),
+      rgba(214, 252, 254, 0)
+    );
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    overflow: auto;
+    padding: 24px;
+  }
+
+  .heading__svg {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 24px;
+  }
+
+  .heading__title {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: -5px;
+    text-align: center;
+    color: var(--gunmetal);
+    margin-bottom: 24px;
+  }
+
+  .heading__text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--electric-blue);
+  }
+
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 328px;
+    height: auto;
+    padding: 24px;
+    position: relative;
+    top: -150px;
+    background-color: var(--white);
+    border-radius: 16px;
+    filter: drop-shadow(16px 32px 56px #8faecf);
+  }
+
+  .calculator__title {
+    text-align: left;
+    font-size: 24px;
+    line-height: 110%;
+    font-weight: 600;
+    color: var(--gunmetal);
+    background-image: linear-gradient(
+      -45deg,
+      rgba(214, 230, 254, 100%),
+      rgba(214, 252, 254, 0%)
+    );
+    margin-bottom: 24px;
+  }
+
+  /* ----------------start of checkbox----------------------- */
+
+  .calculator__checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  .checkbox--container {
+    display: flex;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 600;
+    color: var(--gunmetal);
+  }
+
+  .checkbox--input {
+    width: 31px;
+    height: 31px;
+    /* border: 1px solid var(--blue); */
+    border-color: var(--light-grey);
+  }
+
+  .checkbox--label {
+    padding: 3.5px 18px 3.5px 18px;
+  }
+
+
+/* 
+   .custom-checkbox + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 31px;
+    height: 31px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    background-color: var(--white);
+  } */
+/* 
+  .custom-checkbox:checked + label:before {
+    background-color: var(
+      --light-grey
+    ); /* this changes the background color for checked state */
+  } */
+
+  /* .custom-checkbox + label:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .custom-checkbox:checked + label:after {
+    display: block;
+    position: absolute;
+    left: 12%;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--blue);
+  } */
+  /* ----------------end of checkbox----------------------- */
+
+  .calculator__input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input__measurement--imperial {
+    display: flex;
+    flex-direction: column;
+    /* display: none; */
+  }
+
+  .label {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+
+  .imperial-input-unit {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+
+  .imperial-inputs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .input--imperial--weight,
+  .input--imperial--height {
+    font-size: 24px;
+    line-height: 110%;
+    font-weight: 600;
+    width: 132px;
+    height: 69px;
+    padding: 20px 24px 20px 24px;
+    border-radius: 12px;
+    border-color: 1px solid var(--light-grey);
+    color: var(--gunmetal);
+  }
+
+  .input--imperial--weight:active, .input--imperial--height:active {
+    border-color: var(--blue);
+  }
+
+
+  .input__measurement--metric {
+    /* display: flex; */
+    display: none;
+  }
+
+  .input--metric--weight,
+  .input--metric--height {
+    font-size: 24px;
+    line-height: 110%;
+    font-weight: 600;
+    width: 280px;
+    height: 69px;
+    padding: 20px 24px 20px 24px;
+    border-radius: 12px;
+    border-color: 1px solid var(--light-grey);
+    color: var(--gunmetal);
+  }
+
+
+  .calculator__results {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 16px;
+  }
+
+  .calc__results--text {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 600;
+  }
+
+  .calc__results--number {
+    font-size: 48px;
+    line-height: 110%;
+    font-weight: 600;
+  }
+
+  .calc__results--conclusion1,
+  .calc__results--conclusion2,
+  .conclusion {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 400;
+  }
+
+  .ideal-weight {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 600;
+  }
+
+  .heading__sub1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 72px;
+  }
+
+  .sub1--img {
+    width: 375px;
+    height: 354px;
+    margin-bottom: 24px;
+  }
+
+  .sub1--BMIresult {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .sub1--title,
+  .sub2--title {
+    font-size: 48px;
+    line-height: 110%;
+    font-weight: 600;
+    margin-bottom: 32px;
+    color: var(--gunmetal);
+    text-align: left;
+  }
+
+  .sub2--title {
+    text-align: center;
+  }
+
+  .sub1--text,
+  .sub2--text {
+    text-align: left;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--dark-electric-blue);
+  }
+
+  .sub2--text {
+    text-align: center;
+  }
+
+  .section__BMI-influencers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 72px;
+    background-image: linear-gradient(
+      -45deg,
+      rgba(214, 230, 254, 1),
+      rgba(214, 252, 254, 0)
+    );
+  }
+
+  .influencers {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 24px 40px 24px;
+  }
+
+  .influencers--svg {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 32px;
+  }
+
+  .influencers--content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .influencers--title {
+    font-size: 24px;
+    line-height: 110%;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: var(--gunmetal);
+  }
+
+  .influencers--text {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--dark-electric-blue);
+  }
+
+  .heading__sub2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 72px;
+  }
+
+  .sub2__BMI-limitations {
+    display: flex;
+    flex-direction: column;
+    margin: 0 24px 56px 24px;
+  }
+
+  .section__BMI-limitations {
+    display: flex;
+    flex-direction: column;
+    margin: 56px 24px 0 24px;
+  }
+
+  .limitations-gender,
+  .limitations-age,
+  .limitations-muscle,
+  .limitations-pregnancy,
+  .limitations-race {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    margin: 16px 0 16px 0;
+    background-color: white;
+    border-radius: 16px;
+    filter: drop-shadow(16px 56px 32px #8faecf);
+  }
+
+  .limitations--heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .limitations--svg {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+  }
+
+  .limitations--title {
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 600;
+    color: var(--gunmetal);
+  }
+
+  .limitations--text {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--dark-electric-blue);
+  }
+}

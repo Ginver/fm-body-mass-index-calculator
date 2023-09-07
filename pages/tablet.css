@@ -10,7 +10,6 @@
   .calculator {
     align-items: flex-start;
     width: 686px;
-    height: 467px;
     padding: 32px;
     top: -245px;
   }
@@ -19,9 +18,14 @@
     margin-bottom: 32px;
   }
 
-  .input--measurement--imperial {
-    display: none;
+  .checkbox--label {
+    padding: 3.5px 187px 3.5px 18px;
+  }
+
+  .input__measurement--imperial {
+    display: unset;
     flex-direction: row;
+    /* display: none; */
   }
 
   .imperial-input-unit {
@@ -30,15 +34,14 @@
     align-items: flex-start;
   }
 
-  .input--imperial {
-    width: 299px;
-    height: 69px;
-    margin: 0 24px 24px 0;
+  .imperial-inputs {
+    display: flex;
   }
 
-  .input--measurement--metric {
-    display: unset;
-    display: flex;
+  .input__measurement--metric {
+    /* display: unset;
+    display: flex; */
+    display: none;
   }
 
   .metric-input-unit {
@@ -47,7 +50,10 @@
     align-items: flex-start;
   }
 
-  .input--metric {
+  .input--imperial--height,
+  .input--imperial--weight,
+  .input--metric--height,
+  .input--metric--weight {
     width: 299px;
     height: 69px;
     margin: 0 24px 24px 0;
@@ -55,7 +61,7 @@
 
   /* blabla */
 
-  .calc__results {
+  .calculator__results {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -103,12 +109,15 @@
     justify-content: space-around;
   }
 
-  .limitations {
+  .limitations-gender,
+  .limitations-age,
+  .limitations-muscle,
+  .limitations-pregnancy,
+  .limitations-race {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 32px;
-    /* margin: 16px 0 16px 0; */
     width: 335.5px;
     height: 256px;
   }
