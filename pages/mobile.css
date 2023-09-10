@@ -102,8 +102,7 @@
     padding: 3.5px 18px 3.5px 18px;
   }
 
-
-/* 
+  /* 
    .custom-checkbox + label:before {
     content: "";
     position: absolute;
@@ -115,12 +114,11 @@
     border-radius: 50%;
     background-color: var(--white);
   } */
-/* 
+  /* 
   .custom-checkbox:checked + label:before {
     background-color: var(
       --light-grey
     ); /* this changes the background color for checked state */
-  } */
 
   /* .custom-checkbox + label:after {
     content: "";
@@ -145,10 +143,40 @@
     flex-direction: column;
   }
 
-  .input__measurement--imperial {
+  .input__measurement--metric {
     display: flex;
     flex-direction: column;
     /* display: none; */
+  }
+
+  .metric-input-unit {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+
+  .input--metric--height,
+  .input--metric--weight {
+    font-size: 24px;
+    line-height: 110%;
+    font-weight: 600;
+    width: 280px;
+    height: 69px;
+    padding: 20px 24px 20px 24px;
+    border-radius: 12px;
+    border-color: 1px solid var(--light-grey);
+    color: var(--gunmetal);
+  }
+
+  .input--metric--height:active,
+  .input--metric--weight:active {
+    border-color: var(--blue);
+  }
+
+  .input__measurement--imperial {
+    display: none;
+    display: flex;
+    flex-direction: column;
   }
 
   .label {
@@ -169,8 +197,10 @@
     justify-content: space-between;
   }
 
-  .input--imperial--weight,
-  .input--imperial--height {
+  .input--imperial--height--ft,
+  .input--imperial--height--in,
+  .input--imperial--weight--st,
+  .input--imperial--weight--lbs {
     font-size: 24px;
     line-height: 110%;
     font-weight: 600;
@@ -182,29 +212,28 @@
     color: var(--gunmetal);
   }
 
-  .input--imperial--weight:active, .input--imperial--height:active {
+  .input--imperial--height--ft::after {
+    content: "ft";
+  }
+
+  .input--imperial--height--in::after {
+    content: "in";
+  }
+
+  .input--imperial--weight--st::after {
+    content: "st";
+  }
+
+  .input--imperial--weight--lbs::after {
+    content: "lbs";
+  }
+
+  .input--imperial--height--ft:active,
+  .input--imperial--height--in:active,
+  .input--imperial--weight--st:active,
+  .input--imperial--weight--lbs:active {
     border-color: var(--blue);
   }
-
-
-  .input__measurement--metric {
-    /* display: flex; */
-    display: none;
-  }
-
-  .input--metric--weight,
-  .input--metric--height {
-    font-size: 24px;
-    line-height: 110%;
-    font-weight: 600;
-    width: 280px;
-    height: 69px;
-    padding: 20px 24px 20px 24px;
-    border-radius: 12px;
-    border-color: 1px solid var(--light-grey);
-    color: var(--gunmetal);
-  }
-
 
   .calculator__results {
     display: flex;

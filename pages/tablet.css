@@ -22,10 +22,20 @@
     padding: 3.5px 187px 3.5px 18px;
   }
 
-  .input__measurement--imperial {
-    display: unset;
+  .input__measurement--metric {
+    display: flex;
     flex-direction: row;
-    /* display: none; */
+  }
+
+  .metric-input-unit {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .input__measurement--imperial {
+    display: none;
+    flex-direction: column;
   }
 
   .imperial-input-unit {
@@ -38,28 +48,16 @@
     display: flex;
   }
 
-  .input__measurement--metric {
-    /* display: unset;
-    display: flex; */
-    display: none;
-  }
-
-  .metric-input-unit {
-    flex-direction: column;
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .input--imperial--height,
-  .input--imperial--weight,
+  .input--imperial--height--ft,
+  .input--imperial--height--in,
+  .input--imperial--weight--st,
+  .input--imperial--weight--lbs,
   .input--metric--height,
   .input--metric--weight {
     width: 299px;
     height: 69px;
     margin: 0 24px 24px 0;
   }
-
-  /* blabla */
 
   .calculator__results {
     flex-direction: row;

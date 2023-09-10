@@ -42,10 +42,12 @@
     padding: 3.5px 139px 3.5px 18px;
   }
 
-  .input--metric--weight,
+  .input--imperial--height--ft,
+  .input--imperial--height--in,
+  .input--imperial--weight--st,
+  .input--imperial--weight--lbs,
   .input--metric--height,
-  .input--imperial--height,
-  .input--imperial--weight {
+  .input--metric--weight {
     width: 238px;
     height: 69px;
   }
