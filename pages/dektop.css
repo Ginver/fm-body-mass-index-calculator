@@ -1,19 +1,28 @@
 @media only screen and (min-width: 1440px) {
   .heading__unit {
+    display: flex;
     flex-direction: row;
-    margin: 0 140px 0 24px;
+    width: 100%;
   }
 
   .heading__main {
+    display: flex;
     align-items: flex-start;
+    width: 978px;
     height: 737px;
-    padding: 75px 298px 200px 116px;
+    margin-left: 24px;
   }
 
   .heading__svg {
     width: 64px;
     height: 64px;
     margin-bottom: 127px;
+  }
+
+  .heading__content {
+    display: flex;
+    flex-direction: column;
+    width: 564px;
   }
 
   .heading__title {
@@ -31,6 +40,7 @@
     width: 564px;
     top: 0;
     padding: 32px;
+    margin-left: -300px;
   }
 
   .calculator__checkbox {
