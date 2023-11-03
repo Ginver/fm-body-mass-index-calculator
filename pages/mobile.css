@@ -74,8 +74,6 @@
     margin-bottom: 24px;
   }
 
-  /* ----------------start of checkbox----------------------- */
-
   .calculator__checkbox {
     display: flex;
     flex-direction: row;
@@ -94,49 +92,12 @@
   .checkbox--input {
     width: 31px;
     height: 31px;
-    /* border: 1px solid var(--blue); */
     border-color: var(--light-grey);
   }
 
   .checkbox--label {
     padding: 3.5px 18px 3.5px 18px;
   }
-
-  /* 
-   .custom-checkbox + label:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 2px;
-    width: 31px;
-    height: 31px;
-    border: 1px solid var(--white);
-    border-radius: 50%;
-    background-color: var(--white);
-  } */
-  /* 
-  .custom-checkbox:checked + label:before {
-    background-color: var(
-      --light-grey
-    ); /* this changes the background color for checked state */
-
-  /* .custom-checkbox + label:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-
-  .custom-checkbox:checked + label:after {
-    display: block;
-    position: absolute;
-    left: 12%;
-    top: 50%;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: var(--blue);
-  } */
-  /* ----------------end of checkbox----------------------- */
 
   .calculator__input {
     display: flex;
@@ -146,7 +107,6 @@
   .input__measurement--metric {
     display: flex;
     flex-direction: column;
-    /* display: none; */
   }
 
   .metric-input-unit {
@@ -168,8 +128,32 @@
     color: var(--gunmetal);
   }
 
+  .input-wrapper {
+    position: relative;
+  }
+
+  .input--metric--height {
+    padding-right: 40px;
+  }
+
+  .unit {
+    font-size: 24px;
+    font-weight: 600;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    bottom: 0;
+    margin: auto;
+    pointer-events: none;
+    color: var(--blue);
+  }
+
   .input--metric--height:active,
-  .input--metric--weight:active {
+  .input--metric--weight:active,
+  .input--imperial--height--ft:active,
+  .input--imperial--height--in:active,
+  .input--imperial--weight--st:active,
+  .input--imperial--weight--lbs:active {
     border-color: var(--blue);
   }
 
@@ -210,29 +194,6 @@
     border-radius: 12px;
     border-color: 1px solid var(--light-grey);
     color: var(--gunmetal);
-  }
-
-  .input--imperial--height--ft::after {
-    content: "ft";
-  }
-
-  .input--imperial--height--in::after {
-    content: "in";
-  }
-
-  .input--imperial--weight--st::after {
-    content: "st";
-  }
-
-  .input--imperial--weight--lbs::after {
-    content: "lbs";
-  }
-
-  .input--imperial--height--ft:active,
-  .input--imperial--height--in:active,
-  .input--imperial--weight--st:active,
-  .input--imperial--weight--lbs:active {
-    border-color: var(--blue);
   }
 
   .calculator__results {
