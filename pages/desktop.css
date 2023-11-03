@@ -1,0 +1,150 @@
+@media only screen and (min-width: 1440px) {
+  .heading__unit {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .heading__main {
+    display: flex;
+    align-items: flex-start;
+    width: 978px;
+    height: 737px;
+    margin-left: 24px;
+  }
+
+  .heading__svg {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 127px;
+  }
+
+  .heading__content {
+    display: flex;
+    flex-direction: column;
+    width: 564px;
+  }
+
+  .heading__title {
+    text-align: left;
+    margin-bottom: 35px;
+  }
+
+  .heading__text {
+    text-align: left;
+  }
+
+  .calculator {
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 564px;
+    top: 0;
+    padding: 32px;
+    margin-left: -300px;
+  }
+
+  .calculator__checkbox {
+    justify-content: flex-start;
+    margin-bottom: 32px;
+  }
+
+  .checkbox--label {
+    padding: 3.5px 139px 3.5px 18px;
+  }
+
+  .input--imperial--height--ft,
+  .input--imperial--height--in,
+  .input--imperial--weight--st,
+  .input--imperial--weight--lbs,
+  .input--metric--height,
+  .input--metric--weight {
+    width: 238px;
+    height: 69px;
+  }
+
+  .input--metric--weight {
+    margin-right: 24px;
+  }
+
+  .calculator__results {
+    width: 500px;
+  }
+
+  .heading__sub1 {
+    margin: 64px 140px 96px 140px;
+  }
+
+  .sub1--img {
+    margin-left: 0;
+    margin-right: 132px;
+    width: 564px;
+    height: 533px;
+  }
+
+  .sub1--BMIresult {
+    padding: 0;
+  }
+
+  .sub1--title {
+    padding: 0;
+    margin-bottom: 35px;
+  }
+
+  .section__BMI-influencers {
+    flex-direction: row;
+    margin: 0 24px 120px 24px;
+    padding: 72px 117px 96px 116px;
+    border-radius: 35px;
+  }
+
+  .influencers {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .influencers--svg {
+    margin-bottom: 75px;
+    margin-right: 0;
+  }
+
+  .heading__sub2 {
+    display: flex;
+    flex-direction: row;
+    width: 1160px;
+    height: 704px;
+  }
+
+  .sub2__BMI-limitations {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    width: 564px;
+    margin: 0;
+  }
+
+  .section__BMI-limitations {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 961px;
+    height: 704px;
+  }
+
+  .sub2--BMI-limitations {
+    margin-right: 132px;
+  }
+
+  .sub2--title,
+  .sub2--text {
+    text-align: left;
+  }
+
+  .limitations-gender,
+  .limitations-age,
+  .limitations-muscle,
+  .limitations-pregnancy,
+  .limitations-race {
+    height: fit-content;
+    margin-right: 85px;
+  }
+}
